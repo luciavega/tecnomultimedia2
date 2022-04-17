@@ -5,8 +5,8 @@ class Trazos{
   PImage mascara;
   int cantidad;
   
-  Trazos(String nombre_img){
-   cantidad = 15;
+  Trazos(String nombre_img, int cantidad){
+   this.cantidad = cantidad;
    trazos = new PImage[ cantidad ];
    
    for(int i=0; i<cantidad; i++){
@@ -28,7 +28,6 @@ class Trazos{
     tint( paleta );
     pushMatrix();
     translate(x, y);
-    //scale( random(0.2 , 0.5) );
     image(trazos[cual], 0, 0);
     popMatrix();
     }
