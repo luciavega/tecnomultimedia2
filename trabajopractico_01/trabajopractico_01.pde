@@ -6,7 +6,7 @@ void setup(){
    imageMode( CENTER );
    trazos = new Trazos("trazo");
    paleta = new Paleta("eduardo_p1.png");
-   background(255);
+   background( #FFFBF5 );
 }
 
 void draw(){
