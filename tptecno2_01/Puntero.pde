@@ -1,11 +1,3 @@
-/*
-- Estado 1: Figuras grises
- - Estado 2: Figuras en color
- - Estado 3: Pocas figuras.
- - Estado 4: Muchas figuras.
- - Estado 5: Garabatos y líneas
- */
-
 
 class Trazo {
   PImage [] trazos;
