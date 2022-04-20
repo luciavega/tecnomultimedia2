@@ -38,8 +38,7 @@ class Estado {
         trazos.opacidad = 255;
         cambiarEstado("activo");
       }
-    }
-    if (estado.equals("activo")) {
+    } else if (estado.equals("activo")) {
       trazos.dibujar(p.darUnColor());
       trazos.opacidad = 255;
     }
