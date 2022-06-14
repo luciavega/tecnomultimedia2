@@ -5,7 +5,7 @@ class Linea {
   PImage [] images;
   color colorTinte;
 
-  Linea(float x, float y, int maxImages) { // -- Paso como parámetro la posición en X, en Y y la dimensión del arreglo
+  Linea(float x, float y, int maxImages, String prefijoimagen) { // -- Paso como parámetro la posición en X, en Y y la dimensión del arreglo
     this.x = x;
     this.y = y;
     this.maxImages = maxImages;
@@ -14,7 +14,7 @@ class Linea {
     imageIndex = 0;
 
     for (int i = 0; i < images.length; i++) {
-      String nombre = "linea" + nf(i, 2) + ".png";
+      String nombre = prefijoimagen + nf(i, 2) + ".png";
       images[i] = loadImage ( nombre );
     }
 
