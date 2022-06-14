@@ -2,7 +2,7 @@ Linea l;
 
 void setup() {
   size(800, 800);
-  l = new Linea(random(width), random(height), 12);
+  l = new Linea(random(width), random(height), 12), "linea";
 }
 
 void draw() {
